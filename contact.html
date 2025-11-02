@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.N.M Ibrahim Association</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Times New Roman", Times, serif;
+        }
+        header {
+             background: linear-gradient(to bottom, #006d80, #003c44, black);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #000000;
+            padding: 10px 0;
+            text-align: right;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service-box {
+            flex: 1 1 30%;
+            background-color: #f0f0f0;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        footer {
+            background: linear-gradient(black);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+      <header>
+        <h1>A.N.M Ibrahim Association</h1>
+        <p>"It's Our Own World"</p>
+    </header>
+    
+    <nav>
+        <a href="website.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="ourcompanies.html">Our Companies</a>
+        <a href="products.html">Products</a>
+        <a href="service.html">Services</a>
+        <a href="media.html">Media</a>
+        <a href="contact.html">Contact</a> 
+    </nav>
+    <section class="section" id="contact">
+        <h2>Contact Us</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+            <!-- Contact Form -->
+            <div style="flex: 1 1 45%; padding: 10px;">
+                <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                    <label for="name">Your Name:</label><br>
+                    <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 10px;"><br>
+    
+                    <label for="email">Your Email:</label><br>
+                    <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 10px;"><br>
+    
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px;"></textarea><br><br>
+    
+                    <input type="submit" value="Send Message" style="padding: 10px 20px; background-color: #006d80; color: white; border: none; cursor: pointer;">
+                </form>
+            </div>
+        </div><br>
+        <div style="flex: 1 1 45%; padding: 10px;">
+            <h3>Get in Touch</h3>
+            <p><strong>Email:</strong> info@anmiassociation.com</p>
+            <p><strong>Phone:</strong> +880 167 566 4976</p>
+            <p><strong>Address:</strong> A.N.M Ibrahim Association,<br>
+               123 Khilgaon,<br>
+               Dhaka, Bangladesh</p>
+        </div>
+    </section>
+
+    
+        
+    <footer>
+        &copy; 2025 Your Company Name. All rights reserved. <br>
+        Made by Abdullah Naser Zayed
+    </footer>
+
+</body>
+</html>

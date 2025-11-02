@@ -1,0 +1,141 @@
+        body {
+            margin: 0;
+            font-family: "Times New Roman", Times, serif;
+        }
+        header {
+             background: linear-gradient(to bottom, #006d80, #003c44, black);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #000000;
+            padding: 10px 0;
+            text-align: right;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service-box {
+            flex: 1 1 30%;
+            background-color: #f0f0f0;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        footer {
+            background: linear-gradient(black);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        /* Container */
+        .slideshow-container {
+        position: relative;
+        max-width: 100%; 
+        height: 100vh;
+        margin: auto;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        /* Each slide */
+        .slide {
+        display: none;
+        height: 100%;
+        }
+
+        .slide img {
+        width: 100%;
+        height: 100%;
+        }
+
+        /* Fade animation */
+        .fade {
+        animation: fadeEffect 1.5s;
+        }
+
+        @keyframes fadeEffect {
+        from { opacity: 0.4; }
+        to { opacity: 1; }
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 10px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 22px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background-color: rgba(0,0,0,0.5);
+        transition: background-color 0.3s;
+        }
+
+        .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Dots (indicators) */
+        .dots-container {
+        text-align: center;
+        margin-top: 10px;
+        }
+
+        .dot {
+        cursor: pointer;
+        height: 12px;
+        width: 12px;
+        margin: 0 4px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.4s;
+        }
+
+        .active, .dot:hover {
+        background-color: #717171;
+        }
